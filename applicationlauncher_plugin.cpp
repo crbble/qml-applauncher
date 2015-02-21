@@ -1,8 +1,8 @@
 #include "applicationlauncher_plugin.h"
 #include "applicationlauncher.h"
 #include "application.h"
-#include "unixmodel.h"
-#include "appsunixmodel.h"
+// #include "unixmodel.h"
+// #include "appsunixmodel.h"
 #include <qqml.h>
 
 void ApplicationLauncherPlugin::registerTypes(const char *uri)

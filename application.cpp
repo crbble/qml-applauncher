@@ -28,4 +28,10 @@ void Application::launchScript()
     m_process->start(m_AppName +  m_Arguments);
     qDebug() << "launching application" << m_AppName << "\n with the Argument of \n" + m_Arguments  ;
 }
-
+QString Application::launchScriptGetSTDOUT()
+{
+    m_process->start(m_AppName +  m_Arguments);
+    m_process->waitForFinished();
+    return QString(m_process->readAllStandardOutput());
+    qDebug() << "launching application" << m_AppName << "\n with the Argument of \n" + m_Arguments  ;
+}
